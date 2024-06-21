@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="test.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Background="#E6F0DC"
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="pet_logo.png"
+                HeightRequest="300"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label
+                Text="Pet Registration"
+                FontSize="35"
+                FontFamily="Poppins-Bold"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Register your pet &#10; Bureau of Animal Industry &#10;&#10;"
+                FontSize="20"
+                FontFamily="Poppins-Regular"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Get Started"
+                FontFamily="Poppins-Bold"
+                BackgroundColor="Green"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
